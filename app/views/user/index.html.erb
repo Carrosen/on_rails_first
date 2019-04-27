@@ -2,15 +2,15 @@
 
     <% if user_signed_in? %>
         <li><% link_to 'Logout', destroy_user_session_path, method: :delete %></li>
-            <h1>Articles</h1>
-            <% @articles.each do |article| %>
-                <p><%= article.title %></p>
-                <p><%= article.content %></p>
-            <% end %>
+            # <h1>Articles</h1>
+            # <% @articles.each do |article| %>
+            #     <p><%= article.title %></p>
+            #     <p><%= article.content %></p>
+            # <% end %>
         
 
     <% else %>
-        <li><%= link_to 'Log In', new_user_session_path %></li>
+        <li><%= link_to 'Log in', new_user_session_path %></li>
         <li><%= link_to 'Sign up', new_user_registration_path %></li>
     <% end %>
 
