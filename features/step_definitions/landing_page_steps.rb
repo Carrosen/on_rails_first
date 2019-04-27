@@ -3,22 +3,16 @@ Given("I visit the site") do
 end
 
 When("I click {string} link") do |string|
-  pending # Write code here that turns the phrase above into concrete actions
+  click_on string
 end
 
-When("I fill in {string} with {string}") do |string, string2|
-  pending # Write code here that turns the phrase above into concrete actions
+When("I fill in {string} with {string}") do |field, content|
+  fill_in field, with: content
 end
 
-When("I click {string} button") do |string|
-  pending # Write code here that turns the phrase above into concrete actions
+When("I click {string} button") do |button|
+  click_on button
 end
-
-Then("I should see {string}") do |string|
-  pending # Write code here that turns the phrase above into concrete actions
-end
-
-
 
 
 
