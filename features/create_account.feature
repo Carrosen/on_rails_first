@@ -11,5 +11,11 @@
     Scenario: Successfully create an account [Happy Path]
       When I fill in "Email" with "carrosen@gmail.com"
       And I fill in "Password" with "password"
-      And I click "Create" button
-      Then I should see "Successfully signed up"
+      And I fill in "Password confirmation" with "password"
+      And I click "Sign up" button
+      Then I should see "Sign up"
+    # last one should change to articles, dont know how to do that... yet.
+
+
+    
+    
