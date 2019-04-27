@@ -15,6 +15,18 @@ When("I click {string} button") do |button|
 end
 
 
+Given("the following user exists") do |table|
+  table.hashes.each do |user|
+    FactoryBot.create(:user, user)
+  end
+end
+
+When("I visit the landing page") do
+  visit root_path
+end
+
+
+
 
 # When("I visit the site") do
 #     visit root_path
