@@ -1,12 +1,17 @@
 
-# Feature: Create articles
-#   As a publisher
-#   In order to add relevant content to my news service
-#   I would like to be able to create articles
+Feature: Create articles
+  As a publisher
+  In order to add relevant content to my news service
+  I would like to be able to create articles
 
-#   Background:
-#     Given I visit the landing page
-#     When I click "New Article" link
+  Background:
+    Given I visit the landing page
+    And I click "Login" link
+    And I fill in "Email" with "carrosen@gmail.com"
+    And I fill in "Password" with "password"
+    And I click "Log in" button
+#     # And I should see "Logout" link
+#     # When I click "New Article" link
 
 #   Scenario: Successfully create an article [Happy Path]
 #     When I fill in "Title" with "Learning Rails 5"
