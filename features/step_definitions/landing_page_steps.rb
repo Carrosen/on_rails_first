@@ -11,7 +11,7 @@ When("I fill in {string} with {string}") do |field, content|
 end
 
 When("I click {string} button") do |string|
-  click_button('Sign up')
+  click_button string
 end
 
 Given("the following user exists") do |table|
