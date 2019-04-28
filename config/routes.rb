@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
-  get 'users/index'
+
   devise_for :users
-  root controller: :users, action: :index
+
+  get 'users/index'
+  root controller: :articles, action: :index
+
 end
 
 # # Rails.application.routes.draw do
