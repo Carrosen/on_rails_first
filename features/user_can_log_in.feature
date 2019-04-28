@@ -13,5 +13,5 @@ Feature: User can log in
         And I fill in "Email" with "carrosen@gmail.com"
         And I fill in "Password" with "password"
         And I click "Log in" button
-        Then I should see "Logout"
+        Then I should see "Log in" link
         
