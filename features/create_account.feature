@@ -6,7 +6,7 @@
 
     Background:
       Given I visit the site
-      When I click "Sign up" link
+      When I click "Signup" link
 
     Scenario: Successfully create an account [Happy Path]
       When I fill in "Email" with "carrosen@gmail.com"

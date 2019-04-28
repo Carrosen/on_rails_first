@@ -10,8 +10,8 @@ When("I fill in {string} with {string}") do |field, content|
   fill_in field, with: content
 end
 
-When("I click {string} button") do |string|
-  click_button string
+When("I click {string} button") do |btn|
+  click_button btn
 end
 
 Given("the following user exists") do |table|
