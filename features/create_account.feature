@@ -13,8 +13,7 @@
       And I fill in "Password" with "password"
       And I fill in "Password confirmation" with "password"
       And I click "Sign up" button
-    # Then I should see "Log out"
-    # last one should change to articles, dont know how to do that... yet.
+      Then I should see "Logout" link
 
 
     
