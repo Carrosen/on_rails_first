@@ -8,5 +8,10 @@ Feature: User can log in
             | email              | password |
             | carrosen@gmail.com | password |
 
-        When I visit the landing
-            
+        When I visit the landing page
+        And I click "Login" link
+        And I fill in "Email" with "carrosen@gmail.com"
+        And I fill in "Password" with "password"
+        And I click "Log in" button
+        Then I should see "Logout" link
+        
