@@ -8,6 +8,10 @@ Feature: User can comment articles
             | email              | password |
             | carrosen@gmail.com | password |
 
+        Given the following article exists
+            | title       | content    |
+            | Erik Lundin | Annie Lööf |
+
         When I visit the landing page
         And I click "Login" link
         And I fill in "Email" with "carrosen@gmail.com"
@@ -16,7 +20,8 @@ Feature: User can comment articles
     
     Scenario:
         Then I should see "Articles"
-        And I should see "Add a comment:"
+        And I should see "Show"
+        Then I should see "Add a comment:"
         When I fill in "Commenter" with "Carrosen"
         And I fill in "Body" with "Awesome article"
         And I click "Create Comment" button
