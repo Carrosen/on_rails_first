@@ -12,10 +12,12 @@ Feature: User can comment articles
         And I click "Login" link
         And I fill in "Email" with "carrosen@gmail.com"
         And I fill in "Password" with "password"
-        And I click "Log in" butto
+        And I click "Log in" button
     
     Scenario:
         Then I should see "Articles"
-        And I fill in "Comment" with "This was an awesome article"
-        And I click "comment" button
-        Then I should see "-----"
+        And I should see "Add a comment:"
+        When I fill in "Commenter" with "Carrosen"
+        And I fill in "Body" with "Awesome article"
+        And I click "Create Comment" button
+        Then I should see "Comments"
