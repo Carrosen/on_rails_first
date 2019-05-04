@@ -1,16 +1,19 @@
 <h1>Articles</h1>
 
-<%= link_to 'New Article', new_article_path %>
+<%= link_to 'New article', new_article_path %>
 
-<h2> This is an article </h2>
-<p> this is some text about it </p>
+  <table>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th colspan="2"></th>
+    </tr>
 
-<h2> This is another article </h2>
-<p> this is some text about it </p>
-
-<% @articles.each do |article| %>
-    <p><%= article.title %></p>
-    <p><%= article.content %></p>
+  <% @articles.each do |article| %>
+    <tr>
+      <td><%= article.title %></td>
+      <td><%= article.content %></td>
+      <td><%= link_to 'Show', article_path(article) %></td>
+    </tr>
   <% end %>
-
-  
+</table>
