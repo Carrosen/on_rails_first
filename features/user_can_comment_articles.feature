@@ -21,6 +21,7 @@ Feature: User can comment articles
     Scenario:
         Then I should see "Articles"
         And I should see "Show"
+        When I click "Show" link
         Then I should see "Add a comment:"
         When I fill in "Commenter" with "Carrosen"
         And I fill in "Body" with "Awesome article"
