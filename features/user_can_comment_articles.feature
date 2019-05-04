@@ -12,7 +12,7 @@ Feature: User can comment articles
         And I click "Login" link
         And I fill in "Email" with "carrosen@gmail.com"
         And I fill in "Password" with "password"
-        And I click "Log in" button
+        And I click "Log in" butto
     
     Scenario:
         Then I should see "Articles"
