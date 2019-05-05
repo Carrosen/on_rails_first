@@ -9,10 +9,15 @@
 </p>
 
 <h2>Comments</h2>
-<%= @article.comments.each do |comment| %>
+<% @article.comments.each do |comment| %>
     <p>
       <strong>Commenter:</strong>
-      <%= comment.commenter%>
+      <%= comment.commenter %>
+    </p>
+
+    <p>
+      <strong>Email:</strong>
+      <%= comment.email %>
     </p>
 
     <p>
@@ -28,6 +33,12 @@ local: true) do |form| %>
       <%= form.label :commenter %><br>
       <%= form.text_field :commenter %>
     </p>
+
+    <p>
+      <%= form.label :email %><br>
+      <%= form.text_field :email %>
+    </p>
+
     <p>
       <%= form.label :body %><br>
       <%= form.text_area :body %>

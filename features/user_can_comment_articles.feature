@@ -24,6 +24,29 @@ Feature: User can comment articles
         When I click "Show" link
         Then I should see "Add a comment:"
         When I fill in "Commenter" with "Carrosen"
+        And I fill in "Email"  with "carrosen@gmail.com"
         And I fill in "Body" with "Awesome article"
         And I click "Create Comment" button
         Then I should see "Comments"
+
+    Scenario:
+        Then I should see "Articles"
+        And I should see "Show"
+        When I click "Show" link
+        Then I should see "Add a comment:"
+        When I fill in "Commenter" with "Carrosen"
+        And I fill in "Body" with "Awesome article"
+        And I click "Create Comment" button
+        Then I should see "Comments"
+
+    Scenario:
+        Then I should see "Articles"
+        And I should see "Show"
+        When I click "Show" link
+        Then I should see "Add a comment:"
+        When I fill in "Commenter" with "Carrosen"
+        And I fill in "Email"  with "carrosen@gmail"
+        And I fill in "Body" with "Awesome article"
+        And I click "Create Comment" button
+        Then I should see ""
+
